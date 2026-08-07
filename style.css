@@ -1,0 +1,102 @@
+    /* Loading Overlay */
+    #loader-wrapper {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: #ffffff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+      transition: opacity 0.5s ease, visibility 0.5s ease;
+    }
+
+    /* Scientific Atom Spinner Animation */
+    .atom-spinner {
+      width: 60px;
+      height: 60px;
+      border: 4px solid #0056b3;
+      border-radius: 50%;
+      border-top-color: transparent;
+      animation: spin 1s infinite linear;
+      margin-bottom: 15px;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    .hidden {
+      opacity: 0;
+      visibility: hidden;
+    }
+
+    /* Joke layout enhancements */
+    .badge {
+      font-size: 0.8rem;
+      background: #e0e0e0;
+      padding: 2px 8px;
+      border-radius: 4px;
+    }
+
+
+    /* testicular torsion loader */
+
+
+body {
+  background: #0d1117;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* The structural container */
+.scrotum-zone {
+  position: relative;
+  width: 120px;
+  height: 150px;
+}
+
+/* The twisted spermatic cord connection */
+.spermatic-cord {
+  position: absolute;
+  top: 10px;
+  left: 55px;
+  width: 10px;
+  height: 60px;
+  background: linear-gradient(to bottom, #7209b7, #f72585);
+  border-radius: 5px;
+  transform-origin: top center;
+  animation: cord-twist 2.5s ease-in-out infinite alternate;
+}
+
+/* Base style for the rotating elements */
+.testis {
+  position: absolute;
+  bottom: 20px;
+  width: 45px;
+  height: 55px;
+  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+  transform-origin: -10px -20px; /* Offset axis to simulate orbital knotting */
+}
+
+/* Left element configuration */
+.testis.left {
+  left: 20px;
+  background: #3a0ca3;
+  animation: torsion-left 2.5s ease-in-out infinite alternate;
+}
+
+/* Right element configuration (Becomes ischemic/purple-red during the twist) */
+.testis.right {
+  right: 20px;
+  background: #4361ee;
+  transform-origin: 55px -20px;
+  animation: torsion-right 2.5s ease-in-out infinite alternate;
+}
